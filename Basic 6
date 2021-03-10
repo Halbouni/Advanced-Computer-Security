@@ -1,0 +1,17 @@
+            string word = "7h3j8k9";
+
+            char[] letters = word.ToCharArray(); 
+
+            int decrement = 1;
+         
+            for (int i = 0; i < letters.Length; i++)
+            {
+                var charAsInt = (int)letters[i];
+                var newChar = (char)(charAsInt - decrement);
+                decrement++;
+                Console.Write(newChar);
+            }
+
+// this string gets decremented by the incremented value.
+// so for example if i have abc
+// the first char will remain the same but the next will get decremented 1 and the next will get decremented by 2 and so on.
